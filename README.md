@@ -9,7 +9,7 @@ The program takes a list of file names as input through command line arguments a
 ## Features
 - **Parent Process:** Accepts multiple file names as command line arguments and forks a child process for each file to calculate the histogram.
 - **Child Process:** Computes the histogram for the assigned file and sends it back to the parent process through a pipe.
-- **Signal Handling:** Uses SIGCHLD to handle terminating child processes asynchronously, ensuring data is read only from children that terminate normally.
+- **Signal Handling:** Uses SIGCHLD to handle terminating child processes asynchronously, ensuring data is read-only from children that terminate normally.
 - **Error Handling:** Properly handles file opening failures and abnormal child terminations.
 
 ## Usage
@@ -27,7 +27,7 @@ The program takes a list of file names as input through command line arguments a
 
 3. The Makefile targets are:
 - Histogram: Compiles the main executable.
-- clean`: Removes the executable and temporary files.
+- clean: Removes the executable and temporary files.
 
 ## Requirements
 - POSIX-compliant system for signal handling and IPC.
